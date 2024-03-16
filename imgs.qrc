@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Widgets/Images/shapeColor1.xpm</file>
+        <file>Widgets/Images/shapeColor2.xpm</file>
+        <file>Widgets/Images/pos1.xpm</file>
+        <file>Widgets/Images/pos2.xpm</file>
+        <file>Widgets/Images/pos3.xpm</file>
+        <file>Widgets/Images/pos4.xpm</file>
+        <file>Widgets/Images/pos5.xpm</file>
+        <file>Widgets/Images/pos6.xpm</file>
+        <file>Widgets/Images/pos7.xpm</file>
+        <file>Widgets/Images/pos8.xpm</file>
+        <file>Widgets/Images/pos9.xpm</file>
+    </qresource>
+</RCC>
