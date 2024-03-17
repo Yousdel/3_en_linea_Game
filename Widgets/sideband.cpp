@@ -3,7 +3,7 @@
 #include <QVBoxLayout>
 //app
 #include "Widgets/label.h"
-#include "Widgets/shape.h"
+#include "Widgets/pshape.h"
 
 
 SideBand::SideBand(QWidget *parent) :

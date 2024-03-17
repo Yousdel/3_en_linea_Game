@@ -1,7 +1,6 @@
 #include "position.h"
 
-//qt
-#include <QVBoxLayout>
+
 
 
 
@@ -9,8 +8,8 @@
 Position::Position(QWidget *parent) :
     Image(parent)
 {
-    setMinimumSize(0x82, 0x82);
-    setMaximumSize(0x82, 0x82);
+    setMinimumSize(POS_WIDTH, POS_HEIGHT);
+    setMaximumSize(POS_WIDTH, POS_HEIGHT);
 }
 
 

@@ -1,7 +1,6 @@
 #ifndef IMAGE_H
 #define IMAGE_H
 
-#include "Widgets/shape.h"
 //qt
 #include <QWidget>
 #include <QLabel>
@@ -25,7 +24,7 @@ public:
 				int width, int height)
     {
         setPixmap(QPixmap(filename).
-                       scaled(width, height,       //130,130
+                       scaled(width, height,
                               Qt::KeepAspectRatio));
     }
 

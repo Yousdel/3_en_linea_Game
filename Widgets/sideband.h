@@ -2,7 +2,7 @@
 #define SIDEBAND_H
 
 #include <QWidget>
-#include "Widgets/shape.h"
+#include "Widgets/pshape.h"
 
 
 

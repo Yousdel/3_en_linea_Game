@@ -2,14 +2,14 @@
 #define SHAPE_H
 
 #include <QLabel>
+//app
+#include "Widgets/image.h"
 
-
-//class Label;
 
 /**
  * @brief widget con la ficha
  */
-class PShape : public QLabel
+class PShape : public Image
 {
     Q_OBJECT
 public:

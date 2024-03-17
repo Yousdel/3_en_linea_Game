@@ -18,10 +18,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     Widgets/Table/playingtable.cpp \
     Widgets/Table/position.cpp \
+    Widgets/Table/positionforgame.cpp \
     Widgets/image.cpp \
     Widgets/info.cpp \
     Widgets/label.cpp \
-    Widgets/shape.cpp \
+    Widgets/pshape.cpp \
     Widgets/sideband.cpp \
     Widgets/widget.cpp \
     main.cpp
@@ -34,12 +35,15 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
+    Tools/Utils.h \
     Widgets/Table/playingtable.h \
     Widgets/Table/position.h \
+    Widgets/Table/positionforgame.h \
+    Widgets/Table/sizes.h \
     Widgets/image.h \
     Widgets/info.h \
     Widgets/label.h \
-    Widgets/shape.h \
+    Widgets/pshape.h \
     Widgets/sideband.h \
     Widgets/widget.h
 

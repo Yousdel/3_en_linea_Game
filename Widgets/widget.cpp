@@ -6,14 +6,14 @@
 #include "Widgets/info.h"
 #include "Widgets/sideband.h"
 #include "Widgets/Table/playingtable.h"
-
+#include "Tools/Utils.h"
 
 
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
 {
-    setWindowTitle("3 En Línea");
+    setWindowTitle(APP_TITLE);
     setMinimumSize(600,500);
     addWidgets();
 }
@@ -40,16 +40,22 @@ void Widget::addWidgets()
     PlayingTable *playingTable=
             new PlayingTable(this);
 
-    //ubicar jugador 1
+    //ubicar banda del jugador 1
     game_layout->addWidget(sideBand1);
     //tablero
+    game_layout->addStretch(0x1);
     game_layout->addWidget(playingTable);
-    //ubicar jugador 2
+    //ubicar banda del  jugador 2
+    game_layout->addStretch(0x1);
     game_layout->addWidget(sideBand2);
 
     Info *info=
             new Info(this);
     main_layout->addLayout(game_layout);
     main_layout->addWidget(info);
+
+    //ejemplo
+    playingTable->putShapeOn(0x0, PShape::FirstColor);
+    playingTable->putShapeOn(0x7, PShape::SecondColor);
 }
 

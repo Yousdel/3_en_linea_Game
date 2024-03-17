@@ -1,8 +1,9 @@
 #ifndef POSITION_H
 #define POSITION_H
 
-#include "Widgets/shape.h"
+#include "Widgets/pshape.h"
 #include "Widgets/image.h"
+#include "Widgets/Table/sizes.h"
 //qt
 #include <QWidget>
 #include <QLabel>
@@ -25,7 +26,7 @@ public:
     assignPixmap(const QString &filename)
     {
         Image::assignPixmap(filename,
-                       0x82, 0x82);       //130,130
+                       POS_WIDTH, POS_HEIGHT);       //130,130
     }
 
 

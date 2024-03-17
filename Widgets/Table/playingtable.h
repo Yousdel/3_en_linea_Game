@@ -3,7 +3,7 @@
 
 #include <QWidget>
 //app
-#include "Widgets/Table/position.h"
+#include "Widgets/Table/positionforgame.h"
 
 
 /**
@@ -17,11 +17,18 @@ public:
 
 
 public slots:
-
+    void putShapeOn(int position, PShape::Color color)
+    {
+        if (position >=0x9 || position <0x0)
+        {
+            return;
+        }
+        pos[position]->putShape(color);
+    }
 
 
 private:
-    Position *pos[9];
+    PositionForGame *pos[9];
 
     //metodos
     void addWidgets();
